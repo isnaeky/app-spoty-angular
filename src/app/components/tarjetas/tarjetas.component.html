@@ -1,0 +1,9 @@
+<div class="card-columns">
+    <div class="card puntero" (click)="verArtista(c)" *ngFor="let c of data">
+        <img class="card-img-top" [src]="c.images | noimagen">
+        <div class="card-body">
+            <h4 class="card-title">{{ c.name }}</h4>
+            <p class="card-text"><span class="badge bg-primary" style="color: aliceblue;" *ngFor="let artist of c.artists">{{artist.name}}</span></p>
+        </div>
+    </div>
+</div>
